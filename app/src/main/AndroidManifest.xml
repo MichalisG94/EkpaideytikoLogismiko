@@ -2,13 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.michalis.ekpaideytikologismiko">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/math"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogIn_Activity">
+        <activity android:name=".LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,7 +21,79 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"></activity>
+            android:name=".QuestionsActivity"
+            android:label="Ερωτήσεις"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="Επεξεργασία Προφίλ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddQuestionsActivity"
+            android:label="Προσθήκη Ερωτήσεων"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Προφίλ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestActivity"
+            android:label="Εξέταση Κεφαλαίου"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChapterChoiceActivity"
+            android:label="Επιλογή Κεφαλαίου"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".TheoryActivity"
+            android:label="Επιλογή Κεφαλαίου"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MinusTheoryActivity"
+            android:label="Αφαίρεση"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlusTheoryActivity"
+            android:label="Πρόσθεση"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallActivity"
+            android:label="Wall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="Αναζήτηση Προφίλ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChartsActivity"
+            android:label="Διαγράμματα"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditTheoryActivity"
+            android:label="Επεξεργασία"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MultTheoryActivity"
+            android:label="Πολλαπλασιασμός"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DivTheoryActivity"
+            android:label="Διαίρεση"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

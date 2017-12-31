@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ekpaideytiko Logismiko</string>
+    <string name="app_name">Εκπαιδευτικό Λογισμικό</string>
     <string name="title_activity_log_in_">LogIn_Activity</string>
 
     <!-- Strings related to login -->
@@ -15,4 +15,12 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string-array name="chapters_array">
+        <item>1</item>
+        <item>2 States</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
 </resources>
