@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michalis.ekpaideytikologismiko.WallActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bodyTitleLayout"
+        android:id="@+id/recyclerViewLayout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wall_recyclerView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bodyTitleLayout"
+        android:layout_above="@+id/bodyPostLayout">
+
+        <EditText
+            android:id="@+id/titlePostText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+            android:hint="Title"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bodyPostLayout"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sendPostButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right|center"
+                android:background="?android:attr/selectableItemBackground"/>
+
+            <EditText
+                android:id="@+id/bodyPostText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:drawableEnd="@drawable/ic_send_black_30dp"
+                android:hint="Write your post here..."
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.widget.RelativeLayout>

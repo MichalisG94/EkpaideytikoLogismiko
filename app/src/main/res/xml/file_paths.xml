@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="Profile_Pics" path="Android/data/com.michalis.ekpaideytikologismiko/files/Pictures" />
+</paths>

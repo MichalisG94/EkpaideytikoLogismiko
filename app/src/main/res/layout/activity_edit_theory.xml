@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michalis.ekpaideytikologismiko.EditTheoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wrapper">
+
+        <EditText
+            android:id="@+id/theoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.13"
+            android:fontFamily="serif"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/checkBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_check_black_24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

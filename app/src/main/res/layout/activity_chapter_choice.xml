@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michalis.ekpaideytikologismiko.ChapterChoiceActivity">
+
+    <Button
+        android:id="@+id/chapter1Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="Κεφαλαιο 1 : Πρόσθεση"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"
+        android:drawableRight="@drawable/plus"/>
+
+    <Button
+        android:id="@+id/chapter2Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/chapter1Btn"
+        android:text="Κεφαλαιο 2 : Αφαίρεση"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"
+        android:drawableRight="@drawable/minus"/>
+
+    <Button
+        android:id="@+id/chapter3Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/chapter2Btn"
+        android:text="Κεφαλαιο 3 : Πολλαπλασιασμός"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"
+        android:drawableRight="@drawable/multiply"/>
+
+    <Button
+        android:id="@+id/chapter4Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/chapter3Btn"
+        android:text="Κεφαλαιο 4 : Διαίρεση"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"
+        android:drawableRight="@drawable/divide"/>
+
+    <Button
+        android:id="@+id/finalTestBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/chapter4Btn"
+        android:text="Επαναληπτικό Διαγώνισμα"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorBlack"/>
+
+</RelativeLayout>

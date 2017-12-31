@@ -1,0 +1,80 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/secondaryColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:text="Τίτλος"
+            android:fontFamily="serif"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/profPic"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/deleteIcRL"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Σώμα κειμένου..."
+            android:layout_toRightOf="@+id/profPic"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:fontFamily="serif"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteIcRL"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteIcon"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:minWidth="40dp"
+                android:minHeight="40dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

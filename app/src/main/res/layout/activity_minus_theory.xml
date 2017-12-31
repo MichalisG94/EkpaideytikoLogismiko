@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/flipperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navLayout">
+
+        <ViewFlipper
+            android:id="@+id/minusFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/view1">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif"
+                    android:text="Η αφαίρεση είναι η αντίθετη της πρόσθεσης και σημαίνει ότι αν αρχίσουμε με οποιοδήποτε αριθμό και προσθέσουμε οποιονδήποτε και μετά αφαιρέσουμε τον ίδιο αριθμό που προσθέσαμε, επιστρέφουμε στον αρχικό αριθμό. Η αφαίρεση δηλώνεται με το σύμβολο πλην (-)."
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text1"
+                    android:src="@drawable/subtraction1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/view2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text2"
+                    android:text="Η αφαίρεση χρησιμοποιείται για να αναπαραστήσει διάφορες συσχετιζόμενες διεργασίες: Από μια δοσμένη ομάδα αντικειμένων, αφαίρεσε (απομάκρυνε) ένα δοσμένο αριθμό αντικειμένων. Για παράδειγμα, 5 μήλα πλην 2 μήλα αφήνουν 3 μήλα."
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="serif"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2"
+                    app:srcCompat="@drawable/apple2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/view3">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="serif"
+                    android:text="Έκτοτε η αφαίρεση δεν είναι μια αντιμεταθετική, οι δύο όροι πράξεως ονομάζονται. Τα παραδοσιακά ονόματα για τα μέρη του τύπου: γ - β = α είναι (γ) μειωτέος, το (β) αφαιρετέος και το (α) διαφορά."
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="18sp" />
+
+                <WebView
+                    android:id="@+id/mWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text3"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_above="@+id/ratingBar"
+                    android:layout_marginBottom="40dp"
+                    android:text="Βαθμός Κατανόησης"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorBlack" />
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:numStars="5"
+                    android:stepSize="1" />
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/ratingBar"
+                    android:layout_centerInParent="true" />
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/submitBtn"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navLayout"
+        android:layout_alignParentBottom="true">
+
+        <Space
+            android:id="@+id/centerRef"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/prevBtn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_navigate_before_black_40dp"
+            android:layout_toLeftOf="@+id/centerRef"/>
+
+        <ImageButton
+            android:id="@+id/nextBtn"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_navigate_next_black_40dp"
+            android:layout_toRightOf="@+id/centerRef" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

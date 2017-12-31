@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_questions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michalis.ekpaideytikologismiko.AddQuestionsActivity">
+
+
+    <TextView
+        android:id="@+id/chapterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="Κεφάλαιο :"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapterTextView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:text="Ερώτηση :"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionTextView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"
+        android:text="Απάντηση : "
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/chapterEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/chapterTextView"
+        android:layout_alignStart="@+id/answerEditText"
+        android:layout_alignParentRight="true"/>
+    <!--         android:layout_toEndOf="@+id/answerTextView" -->
+
+    <EditText
+        android:id="@+id/questionEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/questionTextView"
+        android:layout_alignParentRight="true"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="25sp"
+        android:layout_alignStart="@+id/answerEditText" />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/answerTextView"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/answerTextView"
+        android:ems="10"
+        android:textColor="@color/secondaryTextColor"
+        android:fontFamily="serif"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/saveButton"
+        android:src="@drawable/ic_save_black_70dp"
+        android:background="@color/secondaryColor"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/questionTextView" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/addButton"
+        android:src="@drawable/ic_add_black_70dp"
+        android:background="@color/secondaryColor"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/questionTextView" />
+
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/deleteButton"
+        android:src="@drawable/ic_delete_black_70dp"
+        android:background="@color/secondaryColor"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_toEndOf="@+id/saveButton" />
+
+
+
+</RelativeLayout>

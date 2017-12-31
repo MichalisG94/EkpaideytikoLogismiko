@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michalis.ekpaideytikologismiko.EditProfileActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:text="Όνομα: "
+        android:paddingLeft="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:text="Επίθετο:  "
+        android:paddingLeft="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:text="Ηλικία: "
+        android:paddingLeft="8dp"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:fontFamily="serif"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Αποθήκευση"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="17sp"/>
+
+</RelativeLayout>
